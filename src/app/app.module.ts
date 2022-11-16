@@ -5,9 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CheckboxModule } from 'primeng/checkbox';
-import { ButtonModule  } from "primeng/button";
+import { ButtonModule } from "primeng/button";
+import { RippleModule } from 'primeng/ripple';
 
 const primeNg = [
+  RippleModule,
   CheckboxModule,
   ButtonModule
 ];
@@ -17,4 +19,4 @@ const primeNg = [
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
