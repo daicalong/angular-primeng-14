@@ -5,8 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CheckboxModule } from 'primeng/checkbox';
+import { ButtonModule  } from "primeng/button";
 
-const primeNg = [CheckboxModule];
+const primeNg = [
+  CheckboxModule,
+  ButtonModule
+];
 
 @NgModule({
   imports: [...primeNg, BrowserModule, FormsModule],
